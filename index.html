@@ -15,13 +15,30 @@
       padding: 0;
     }
     p {
-      font-size: 15px;
+      font-size: 16px;
     }
     img {
       border: 0;
     }
+    .emailDate {
+      font-size: 24px;
+    }
 
     @media screen and (max-width: 599.98px) {
+      img {
+        height: auto !important;
+        max-width: 600px !important;
+        width: 100% !important;
+      }
+      /* .emailHeader {
+        height: auto !important;
+        max-width: 600px !important;
+        width: 100% !important;
+      } */
+      .emailDate {
+        font-size: 20px;
+        line-height: 22px;
+      }
     }
     @media screen and (max-width: 399.98px) {
     }
@@ -48,31 +65,34 @@
       </style>
     <![endif]-->
 
-    <center style="width:100%;table-layout:fixed;background-color:#fafdfe;padding-bottom:40px;">
-      <div style="max-width:600px;background-color:#fafdfe;box-shadow:0 0 10px rgba(0, 0, 0, 0.2)">
+    <center style="width: 100%;table-layout: fixed;background-color: #fafdfe;padding-bottom: 40px;">
+      <div style="max-width: 600px;background-color: #fafdfe;box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)">
+
         <!-- Preheader (remove comment) -->
         <div style="font-size: 0px;color:#fafdfe;line-height: 1px;mso-line-height-rule: exactly;display: none;max-width: 0;max-height: 0;opacity: 0;overflow: hidden;mso-hide: all;">
           <!-- Preheader text goes here (85-100 characters) -->
           Northern/NorthMart weekly flyer.
         </div>
+
         <!-- End Preheader -->
 
         <!--[if (gte mso 9)|(IE)]>
-          <table width="600" align="center" style="border-spacing:0;color:#005cab;" role="presentation">
+          <table width="600" align="center" style="border-spacing: 0;color:#005cab;" role="presentation">
             <tr>
               <td style="padding:0;">
         <![endif]-->
+        
 
         <table align="center" style="border-spacing:0;color: #005cab;font-family: Helvetica, Arial,sans-serif !important;background-color: #fafdfe;margin: 0;padding: 0;width: 100%;max-width: 600px;" role="presentation">
 
           <!-- START HEADER/BANNER -->
           <tr>
-            <td style="padding:0;">
+            <td class="banner" background="" style="padding:0;">
               <table width="100%" style="border-spacing:0;" role="presentation">
 
                 <tr>
                   <td style="background-color: #1e4280; text-align:center;padding: 40px 0 0 0;">
-                    <a href="https://www.northmart.ca/flyers" target="_blank"><img src="img/email_banner-desktop.jpg" alt="Northern/NorthMart header" title="Northern/NorthMart header" width="600" border="0"></a>
+                    <a href="https://www.northmart.ca/flyers" target="_blank"><img class="emailHeader" src="img/email_banner-desktop.jpg" alt="Northern/NorthMart header" title="Northern/NorthMart header" width="600" border="0"></a>
                   </td>
                 </tr>
 
@@ -82,9 +102,46 @@
           <!-- END HEADER/BANNER -->
 
           <!-- START DATES -->
+          <tr>
+            <td align="center" style="padding:0;">
+              <table width="100%" style="border-spacing:0;" role="presentation">
+                <tr>
+
+                  <!--[if (gte mso 9)|(IE)]>
+                    <td style="padding-top: 20px; padding-bottom: 20px;">
+                  <![endif]-->
+
+                  <td align="center" style="line-height: 26px; color: #29ABE2; padding: 10px 20px 10px 20px;">
+                    <h1 class="emailDate" style="font-weight: 400; line-height: 26px; color: #29ABE2; padding: 10px 20px 10px 20px;background-color: #fafdfe">
+                      Prices in effect:<br />
+                      <strong>November 30 - December 6, 2023</strong>
+                    </h1>
+                  </td>
+
+                  <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                  <![endif]-->
+
+                </tr>
+              </table>
+            </td>
+          </tr>
           <!-- END DATES -->
 
           <!-- START FEATURE -->
+          <tr>
+            <td class="feature" background="" style="padding:0;">
+              <table width="100%" style="border-spacing:0;" role="presentation">
+
+                <tr>
+                  <td style="background-color: #fafdfe; text-align:center;padding: 0;">
+                    <a href="https://www.northmart.ca/flyers" target="_blank"><img class="emailFeature" src="img/email_feature_600x500.jpg" alt="Northern/NorthMart header" title="Northern/NorthMart header" width="600" border="0"></a>
+                  </td>
+                </tr>
+
+              </table>
+            </td>
+          </tr>
           <!-- END FEATURE -->
 
           <!-- START SECONDARY -->
